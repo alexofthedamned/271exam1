@@ -20,8 +20,7 @@ float printTable(float lower, float higher, int counter) {
 	return 0;
 }
 
-int main()
-{
+int main() {
 	float higher;
 	float lower;
 	int counter = 0;
@@ -37,11 +36,9 @@ int main()
 		cout << "Invalid entry! Please enter a valid value BETWEEN 1-10:\n";
 		cin >> counter;
 	}
-
+	
 	cout << "\nFarenheit \t Celcius \n ------- \t ------ \n";
-
 	printTable(lower, higher, counter);
-
 	main(); 
 	return 0;
 }
