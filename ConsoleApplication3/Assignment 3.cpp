@@ -7,10 +7,6 @@ using namespace std;
 float f2c(float f) {
 	float c;
 	c = (f - 32)*(0.55555555556);
-
-	cout.setf(ios::fixed);
-	cout.setf(ios::showpoint);
-	cout.precision(7);
 	cout << c << endl;
 	return c;
 }
@@ -18,9 +14,6 @@ float f2c(float f) {
 float printTable(float lower, float higher, int counter) {
 
 	while (lower < higher) {
-		cout.setf(ios::fixed);
-		cout.setf(ios::showpoint);
-		cout.precision(7);
 		cout << lower << "\t";
 		f2c(lower);
 		lower += counter;
